@@ -1,0 +1,37 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+position: relative;
+left: 40px;
+}
+.nav-bar ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap:50px;
+    position: relative;
+    top: 50px;
+
+}
+.search{
+    position: relative;
+    top:60px;
+    right: 100px;
+    font-size: larger;
+    color: #003A2A;
+}
+.nav-bar{
+    position: relative;
+    left: -40px;
+}
+.nav-bar ul li{
+    font-size: 20px;
+    color: #003A2A;
+    font-weight: bold;
+}
+.landing{
+    display: flex;
+    justify-content: space-between;
+}
