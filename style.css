@@ -20,6 +20,7 @@ a, li{
 body {
     color:#003A2A;
     font-family: nunito;
+       font-size: 16px; 
 }
 
 .l-green{
@@ -82,6 +83,9 @@ nav{
 .fa-magnifying-glass{
     margin-left:-2rem;
 }
+.hero img{
+  padding-top: 9rem;
+}
 
 .hero{
     display: flex;
@@ -100,6 +104,7 @@ nav{
         margin-top: 1rem;
         margin-left: 1rem;
     }
+  
 }
 
 .hero-btn{
@@ -124,7 +129,7 @@ nav{
 .download{
     background-color: hsl(163, 100%, 11%);
     padding: 0.5rem 5rem 1.5rem 10rem;
-    margin-top: 15rem;
+    margin-top: 10rem;
     color:white;
     display: flex;
     justify-content: space-between;
@@ -173,7 +178,7 @@ nav{
     padding: 3rem;
     h1{
         font-size: 50px;
-        margin-bottom: 3rem;
+        margin-bottom: 7rem;
     }
 }
 
@@ -206,7 +211,7 @@ nav{
     padding: 5rem 0 5rem 20rem;
     align-content: center;
     h1{
-        justify-self: center;
+      margin-left: 30%;
         font-size: 50px;
         margin-bottom: 5rem;
     }
@@ -221,8 +226,8 @@ nav{
 }
 
 .circle{
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border-radius: 100px;
     border: #003A2A solid 5px;
     justify-items: center;
@@ -276,6 +281,7 @@ nav{
         width:200px;
         height:200px;
         border-radius: 100px;
+       
     }
 }
 
@@ -283,6 +289,7 @@ nav{
     justify-items: center;
     line-height: 2;
     font-size: 22px;
+   
 }
 
 .first-page{
@@ -388,13 +395,13 @@ nav{
 }
 
 .form{
-    border:white 10px solid;
+    border:white 5px solid;
     padding: 3rem;
 }
 
 .contact-info{
-    border:white 10px solid;
-    padding: 3rem;
+    border:white 5px solid;
+    padding: 6rem 3rem;
     margin-top: 6.5rem;
 }
 
@@ -519,4 +526,78 @@ nav{
     margin: 3rem 3rem 0 3rem;
     justify-items: center;
     padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .nav-bar ul {
+        flex-direction: column; 
+        display: none; 
+    }
+   .hero img{ 
+     width:200px;
+    padding-top: -6%;
+   }
+    .nav-bar.active ul {
+        display: flex; 
+    }
+
+    .hero h1 {
+        font-size: 36px; 
+    }
+
+    .hero p {
+        font-size: 16px; 
+        width:140%;
+        margin-left: 1%;
+       
+    }
+    .hero{
+        margin-left: 3%;
+    }
+    .download {
+        flex-direction: column; 
+    }
+
+    .step {
+        flex-direction: column; 
+    }
+    .how-it-works h1{
+        margin-left: -5%;
+    }
+   .container{
+    margin-left: -6%;
+   }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px; 
+    }
+
+    .hero h1 {
+        font-size: 28px; 
+    }
+
+    .hero p {
+        font-size: 14px; 
+        padding: 0 10px; 
+    }
+
+    .step img {
+        width: 60px; 
+        margin-bottom: 8px; 
+    }
 }
