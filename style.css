@@ -67,22 +67,6 @@ nav {
     font-weight: 700;
 }
 
-.search {
-    margin: 1rem 5rem 0 0;
-
-    input {
-        padding: 0.5rem 1rem;
-        border: #289323 1px solid;
-        border-radius: 50px;
-    }
-
-    input:focus {
-        outline: 1px solid #003A2A;
-        border: none;
-        color: white;
-    }
-}
-
 .fa-magnifying-glass {
     margin-left: -2rem;
 }
@@ -587,7 +571,6 @@ nav {
 
 
 
-
 @media screen and (min-width:820px) and (max-width: 1180px) {
 
     * {
@@ -601,6 +584,28 @@ nav {
         font-family: nunito;
         src: url('fonts/Nunito-VariableFont_wght.ttf');
     }
+
+  .download {
+    margin-top: 40%;
+    flex-direction: column;
+    align-items: center;
+    background: none ;
+    color: #289323;
+    padding: 1rem ;
+    margin: 1rem 0 0 0 ;
+  }
+  .google-play {
+    margin: 1rem 0 0 0 ;
+    align-items: center;
+    text-align: center;
+  }
+  .google-play p {
+    font-size: 1rem ;
+    display: block ;
+  }
+.social-media h2{
+    font-size: 12px;
+}
 
     html {
         scroll-behavior: smooth;
