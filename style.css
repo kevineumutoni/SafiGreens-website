@@ -9,29 +9,31 @@
     src: url('fonts/Nunito-VariableFont_wght.ttf');
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-a, li{
+a,
+li {
     cursor: pointer;
 }
 
 body {
-    color:#003A2A;
+  
+    color: #003A2A;
     font-family: nunito;
        font-size: 16px; 
 }
 
-.l-green{
-    color:#289323;
+.l-green {
+    color: #289323;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 1000;
     background-color: white;
 }
@@ -39,66 +41,74 @@ nav{
 .nav-bar ul {
     display: flex;
     list-style-type: none;
-    gap:60px;
+    gap: 60px;
     margin-top: 1.5rem;
 }
 
-.nav-bar a{
+.nav-bar a {
     text-decoration: none;
     color: #003A2A;
 }
 
-.nav-bar a:active{
+.nav-bar a:active {
     color: #289323;
 }
 
-.header-logo{
-    img{
-        height:60px;
+.header-logo {
+    img {
+        height: 60px;
     }
 }
 
-#home{    
+#home {
     color: #289323;
 }
-.nav-bar ul li{
+
+.nav-bar ul li {
     font-size: 20px;
-    font-weight:700;
+    font-weight: 700;
 }
 
-.search{
+.search {
     margin: 1rem 5rem 0 0;
-    input{
-        padding:0.5rem 1rem;
-        border:#289323 1px solid;
+
+    input {
+        padding: 0.5rem 1rem;
+        border: #289323 1px solid;
         border-radius: 50px;
     }
-    input:focus{
-        outline:1px solid #003A2A;
-        border:none;
+
+    input:focus {
+        outline: 1px solid #003A2A;
+        border: none;
         color: white;
     }
 }
 
-.fa-magnifying-glass{
-    margin-left:-2rem;
+.fa-magnifying-glass {
+    margin-left: -2rem;
 }
 .hero img{
-  padding-top: 9rem;
+  padding-top: 2rem;
+  width: 150%;
+  margin-left: -40%;
+
 }
 
-.hero{
+.hero {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 6rem;
-    h1{
+    margin: 7rem 6rem;
+
+    h1 {
         font-size: 90px;
     }
 }
 
-.hero-title{
+.hero-title {
     margin-top: 3rem;
-    p{
+
+    p {
         font-size: 25px;
         padding-right: 35rem;
         margin-top: 1rem;
@@ -107,107 +117,123 @@ nav{
   
 }
 
-.hero-btn{
+.hero-btn {
     padding: 0.7rem 3.5rem;
     font-family: nunito;
     border-radius: 50px;
     font-size: 18px;
-    border:none;
+    border: none;
     font-weight: bolder;
-    margin:3rem 2rem 0 ;
+    margin: 3rem 1rem 0;
 }
 
-.shop-now-btn{
+.shop-now-btn {
     background-color: #003A2A;
     color: white;
 }
-
-.categories-btn{
-    border: #003A2A solid 2px;
+.shop-now-btn:hover{
+  cursor: pointer;
 }
 
-.download{
+.categories-btn {
+    border: #003A2A solid 2px;
+}
+.categories-btn:hover{
+  cursor: pointer;
+}
+
+.download {
     background-color: hsl(163, 100%, 11%);
     padding: 0.5rem 5rem 1.5rem 10rem;
-    margin-top: 10rem;
+
+    margin-top: 2rem;
     color:white;
+
+    color: white;
+
     display: flex;
     justify-content: space-between;
 }
 
-.google-play{
+.google-play {
     align-self: center;
-    img{
-        height:30px;
+
+    img {
+        height: 30px;
     }
-    p{
+
+    p {
         font-size: 25px;
     }
 }
 
-.playstore{
+.playstore {
     font-size: 35px;
     font-weight: bolder;
 }
 
-.prototype{
+.prototype {
     display: flex;
     margin-top: -10rem;
-    gap:40px;
-    img{
-        height:300px;
-        width:150px;
+    gap: 40px;
+
+    img {
+        height: 300px;
+        width: 150px;
     }
 }
 
-.orders{
+.orders {
     transform: rotate(-20deg);
 }
 
-.cart{
+.cart {
     transform: rotate(20deg);
 }
 
-.safi-greens-home{
+.safi-greens-home {
     z-index: 100;
     margin: -2rem;
 }
 
-#why-choose{
+#why-choose {
     justify-items: center;
     padding: 3rem;
-    h1{
+
+    h1 {
         font-size: 50px;
         margin-bottom: 7rem;
     }
 }
 
-.choose-options{
+.choose-options {
     display: flex;
     justify-content: space-evenly;
-    .fa-solid{
+
+    .fa-solid {
         font-size: 80px;
     }
 }
 
-.option{
+.option {
     justify-items: center;
     text-align: center;
-    h2{
+
+    h2 {
         color: #289323;
         margin: 1rem;
     }
 }
 
-.option-txt{
-    width:50%;
+.option-txt {
+    width: 50%;
 }
 
-.option-text{
-    width:70%;
+.option-text {
+    width: 70%;
 }
 
-.how-it-works{
+.how-it-works {
     padding: 5rem 0 5rem 20rem;
     align-content: center;
     h1{
@@ -217,17 +243,21 @@ nav{
     }
 }
 
-.step{
+.step {
     align-self: center;
     display: flex;
-    gap:10px;
+    gap: 10px;
     align-items: center;
     font-size: 20px;
 }
 
-.circle{
-    height: 70px;
-    width: 70px;
+
+
+
+.circle {
+    height: 75px;
+    width: 75px;
+
     border-radius: 100px;
     border: #003A2A solid 5px;
     justify-items: center;
@@ -235,38 +265,39 @@ nav{
     margin: 0.5rem;
 }
 
-.circle-1{
+.circle-1 {
     border: #289323 solid 5px;
     border-top: none;
 }
 
-.circle-2{
+.circle-2 {
     border-right: none;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-self: center;
 }
 
-.steps-prototype{
+.steps-prototype {
     background-color: rgb(0, 58, 42);
     justify-content: center;
     display: flex;
-    gap:50px;
+    gap: 50px;
     padding: 3rem;
-    width:60%;
-    border-radius:50% / 100% 100% 0% 0% ;
-    img{
-        height:300px;
-        width:150px;
+    width: 60%;
+    border-radius: 50% / 100% 100% 0% 0%;
+
+    img {
+        height: 300px;
+        width: 150px;
     }
 }
 
-.categories-section{
-    h1{
+.categories-section {
+    h1 {
         text-align: center;
         color: #289323;
         font-size: 50px;
@@ -274,177 +305,200 @@ nav{
     }
 }
 
-.category-items{
+.category-items {
     display: flex;
     justify-content: space-evenly;
-    img{
-        width:200px;
-        height:200px;
+
+    img {
+        width: 200px;
+        height: 200px;
         border-radius: 100px;
        
     }
 }
 
-.category{
+.category {
     justify-items: center;
     line-height: 2;
     font-size: 22px;
    
 }
-
-.first-page{
+.contact{
+  margin-top: 5%;
+}
+.first-page {
     margin-top: -3rem;
     transform: rotate(-20deg);
 }
 
-.second-page{
+.second-page {
     margin-top: -7rem;
 }
 
-.third-page{
+.third-page {
     margin-top: -3rem;
     transform: rotate(20deg);
 }
 
-#our-story{
+#our-story {
     justify-items: center;
-    margin: 5rem 0;   
-    font-size: 25px; 
+    margin: 5rem 0;
+    font-size: 25px;
 }
 
-.community{
+.community {
     height: 800px;
     width: 100%;
     align-content: end;
-    background-image: linear-gradient(rgba(0, 58, 42, 0), rgba(0, 58, 42,0.8)), url('https://www.gainhealth.org/sites/default/files/2025-02/dsc07855.jpg');
+    background-image: linear-gradient(rgba(0, 58, 42, 0), rgba(0, 58, 42, 0.8)), url('https://www.gainhealth.org/sites/default/files/2025-02/dsc07855.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top:3rem;
-    h1{
+    margin-top: 3rem;
+
+    h1 {
         text-align: center;
-        padding-right: 30rem;
+        padding-right: 10rem;
         font-size: 70px;
         color: white;
-        margin-left: 25rem;
+        margin-left: 20rem;
     }
 }
 
-.users-story{
+.users-story {
     justify-items: center;
-    i{
+
+    i {
         font-size: 150px;
     }
-    p{
-        padding: 5rem 30rem;
+
+    p {
+        padding: 5rem 15rem;
         font-size: 20px;
     }
 }
 
-#contact-us{
-    background-image: linear-gradient(rgba(0, 58, 42, 0), rgba(0, 58, 42,0.8)), url('images/contact-us-bg.jpg');
+#contact-us {
+    background-image: linear-gradient(rgba(0, 58, 42, 0), rgba(0, 58, 42, 0.8)), url('images/contact-us-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     padding: 5rem 2rem;
     border-radius: 30px;
-    margin:5rem;
-    color:white;
+    margin: 5rem;
+    color: white;
     line-height: 2;
-    h1{
+
+    h1 {
         font-size: 40px;
         margin-bottom: 1.5rem;
     }
-    button,textarea, input{
-        background-color: rgba(250,250,250,0);
-        border:white 2px solid;
-        padding:0.5rem 5rem 1rem 0.5rem;
+
+    button,
+    textarea,
+    input {
+        background-color: rgba(250, 250, 250, 0);
+        border: white 1px solid;
+        padding: 0.5rem 5rem 1rem 0.5rem;
         color: white;
         font-size: 20px;
         margin-bottom: 1.5rem;
         font-style: italic;
     }
-    textarea{
-        padding:0.5rem 5.8rem 5rem 0.5rem;
+
+    textarea {
+        padding: 0.5rem 5.8rem 5rem 0.5rem;
     }
 
-    label{
+    label {
         font-weight: bolder;
         font-size: 20px;
     }
 
-    ::placeholder{
-        color:white;
+    ::placeholder {
+        color: white;
         font-size: 15px;
     }
-    textarea:focus , input:focus{
-        outline:2px solid #fff;
-        border:none;
+
+    textarea:focus,
+    input:focus {
+        outline: 2px solid #fff;
+        border: none;
     }
-    button{
+
+    button {
         text-align: center;
-        padding:0.5rem 2rem;
+        padding: 0.5rem 2rem;
         font-style: normal;
         font-weight: bolder;
     }
-    i{
+
+    i {
         font-size: 30px;
     }
 }
 
-.form{
-    border:white 5px solid;
+
+
+
+.form {
+    border: white 6px solid;
     padding: 3rem;
 }
 
-.contact-info{
-    border:white 5px solid;
-    padding: 6rem 3rem;
+.contact-info {
+    border: white 6px solid;
+    padding: 3rem;
     margin-top: 6.5rem;
 }
 
-.contact{
-    display:grid;
-    gap:50px;
+.contact {
+    display: grid;
+    gap: 50px;
     grid-template-columns: auto auto;
-    div{
+
+    div {
         justify-items: center;
     }
 }
 
-.main-txt{
+.main-txt {
     font-weight: bolder;
     font-size: 20px;
 }
 
-.social-media{
-    margin-top: 5rem;
-    h2{
+.social-media {
+    margin-top: 9rem;
+
+    h2 {
         display: inline;
     }
-    i{
-        margin:0 0.5rem;
+
+    i {
+        margin: 0 0.5rem;
     }
 }
 
-.help-section{
-    h1{
+.help-section {
+    h1 {
         justify-self: center;
         font-size: 45px;
         margin-bottom: 5rem;
     }
 }
 
-.help{
+.help {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    i{
+
+    i {
         font-size: 80px;
     }
-    h2{
+
+    h2 {
         margin-top: 1rem;
     }
 }
@@ -457,6 +511,8 @@ nav{
   
   
 .faq-item {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 10px 0;
     margin: 1rem;
@@ -478,9 +534,12 @@ nav{
   
   .faq-answer {
     border-bottom: 1px solid #ccc;
+    width: 28.9%;
+    margin-left: 35.5%;
     display: none;
     padding: 10px 0;
     justify-self:center;
+    text-align: center;
   }
   
 #faq-container{
@@ -489,21 +548,23 @@ nav{
         margin-bottom: 2rem;
         justify-self: center;
     }
-}    
+}
 
-.footer-container{
+.footer-container {
     background-color: #003A2A;
 }
 
-.footer{
+.footer {
     line-height: 2;
-    color:white;
+    color: white;
     display: flex;
     justify-content: space-evenly;
     padding: 5rem 0;
-    ul{
+
+    ul {
         list-style-type: none;
-        a{
+
+        a {
             text-decoration: none;
             color: #fff;
         }
@@ -514,13 +575,14 @@ nav{
     display: grid;
     justify-items: center;
     grid-template-columns: auto auto;
-    gap:10px;
-    i{
+    gap: 10px;
+
+    i {
         font-size: 25px;
     }
 }
 
-.copy-right{
+.copy-right {
     border-top: white solid 3px;
     color: white;
     margin: 3rem 3rem 0 3rem;
@@ -845,10 +907,13 @@ nav{
 
 
 @media all and (max-width: 1280px)  {
- 
+   body{
+    overflow-x: hidden;
+    
+   }
     .hero img {
     width: 100%;
-    margin-left: -30%;
+    margin-left: 15%;
     
   }
     .hero-title p {
@@ -879,7 +944,7 @@ nav{
     
   .download{
  
-        padding: 0.5rem 5rem 1.5rem 10rem;
+        padding: 7rem 5rem 1.5rem 10rem;
   }
   .google-play p{
     font-size: 20px;
@@ -935,7 +1000,7 @@ nav{
     margin-left: 15%;
 }
 .users-story p{
-    width: 140%;
+    width: 135%;
  padding-left: 28%;
 
 }
@@ -945,7 +1010,7 @@ nav{
 }
 #contact-us{
     margin-left: 2%;
-    width: 82%
+    width: 95%
 }
 .help-section{
     margin-top: 4%;
@@ -959,28 +1024,8 @@ nav{
   
      
 }
-.nav{
-  
+.community {
+   width: 99%;
 }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
