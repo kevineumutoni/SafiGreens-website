@@ -19,8 +19,10 @@ li {
 }
 
 body {
+  
     color: #003A2A;
     font-family: nunito;
+       font-size: 16px; 
 }
 
 .l-green {
@@ -70,11 +72,17 @@ nav {
 .fa-magnifying-glass {
     margin-left: -2rem;
 }
+.hero img{
+  padding-top: 2rem;
+  width: 150%;
+  margin-left: -40%;
+
+}
 
 .hero {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 6rem;
+    margin: 7rem 6rem;
 
     h1 {
         font-size: 90px;
@@ -90,6 +98,7 @@ nav {
         margin-top: 1rem;
         margin-left: 1rem;
     }
+  
 }
 
 .hero-btn {
@@ -99,23 +108,33 @@ nav {
     font-size: 18px;
     border: none;
     font-weight: bolder;
-    margin: 3rem 2rem 0;
+    margin: 3rem 1rem 0;
 }
 
 .shop-now-btn {
     background-color: #003A2A;
     color: white;
 }
+.shop-now-btn:hover{
+  cursor: pointer;
+}
 
 .categories-btn {
     border: #003A2A solid 2px;
+}
+.categories-btn:hover{
+  cursor: pointer;
 }
 
 .download {
     background-color: hsl(163, 100%, 11%);
     padding: 0.5rem 5rem 1.5rem 10rem;
-    margin-top: 15rem;
+
+    margin-top: 2rem;
+    color:white;
+
     color: white;
+
     display: flex;
     justify-content: space-between;
 }
@@ -167,7 +186,7 @@ nav {
 
     h1 {
         font-size: 50px;
-        margin-bottom: 3rem;
+        margin-bottom: 7rem;
     }
 }
 
@@ -201,9 +220,8 @@ nav {
 .how-it-works {
     padding: 5rem 0 5rem 20rem;
     align-content: center;
-
-    h1 {
-        text-align: center;
+    h1{
+      margin-left: 30%;
         font-size: 50px;
         margin-bottom: 5rem;
     }
@@ -217,9 +235,13 @@ nav {
     font-size: 20px;
 }
 
+
+
+
 .circle {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
+
     border-radius: 100px;
     border: #003A2A solid 5px;
     justify-items: center;
@@ -275,6 +297,7 @@ nav {
         width: 200px;
         height: 200px;
         border-radius: 100px;
+       
     }
 }
 
@@ -282,8 +305,11 @@ nav {
     justify-items: center;
     line-height: 2;
     font-size: 22px;
+   
 }
-
+.contact{
+  margin-top: 5%;
+}
 .first-page {
     margin-top: -3rem;
     transform: rotate(-20deg);
@@ -316,10 +342,10 @@ nav {
 
     h1 {
         text-align: center;
-        padding-right: 30rem;
+        padding-right: 10rem;
         font-size: 70px;
         color: white;
-        margin-left: 25rem;
+        margin-left: 20rem;
     }
 }
 
@@ -331,7 +357,7 @@ nav {
     }
 
     p {
-        padding: 5rem 30rem;
+        padding: 5rem 15rem;
         font-size: 20px;
     }
 }
@@ -358,7 +384,7 @@ nav {
     textarea,
     input {
         background-color: rgba(250, 250, 250, 0);
-        border: white 2px solid;
+        border: white 1px solid;
         padding: 0.5rem 5rem 1rem 0.5rem;
         color: white;
         font-size: 20px;
@@ -398,13 +424,16 @@ nav {
     }
 }
 
+
+
+
 .form {
-    border: white 10px solid;
+    border: white 6px solid;
     padding: 3rem;
 }
 
 .contact-info {
-    border: white 10px solid;
+    border: white 6px solid;
     padding: 3rem;
     margin-top: 6.5rem;
 }
@@ -425,7 +454,7 @@ nav {
 }
 
 .social-media {
-    margin-top: 5rem;
+    margin-top: 9rem;
 
     h2 {
         display: inline;
@@ -462,70 +491,46 @@ nav {
     font-size: 24px;
     margin: 20px 10px;
     color: #0d3c28;
-}
-
-#faq-container {
-    max-width: 700px;
-    margin: 5rem auto;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
-}
-
-#faq-container h1 {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
+  }
+  
+  
 .faq-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px 0;
-    margin: 1rem 0;
-    background: #f8f8f8;
-    border-radius: 8px;
-}
-
-.faq-question {
+    margin: 1rem;
+    i{
+        border: solid #003A2A 2px;
+        padding: 5px;
+        border-radius: 100px;
+    }
+  }
+  
+  .faq-question {
     border-bottom: 1px solid #ccc;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.faq-question i {
-    border: solid #003A2A 2px;
-    padding: 5px;
-    border-radius: 100px;
-    margin-left: 1rem;
-}
-
-.faq-answer {
+    margin: 0 40rem;
+  }
+  
+  .faq-answer {
     border-bottom: 1px solid #ccc;
+    width: 28.9%;
+    margin-left: 35.5%;
     display: none;
-    padding: 10px 1.5rem;
-    font-size: 1rem;
-    color: #444;
-}
-
-.faq-item.open .faq-answer {
-    display: block;
-    animation: fadeIn 0.3s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
+    padding: 10px 0;
+    justify-self:center;
+    text-align: center;
+  }
+  
+#faq-container{
+    margin:5rem auto;
+    h1{
+        margin-bottom: 2rem;
+        justify-self: center;
     }
 }
 
@@ -570,6 +575,7 @@ nav {
 }
 
 
+
 @media all and (min-width: 320px) and (max-width: 780px) {
   html, body {
     overflow-x: hidden;
@@ -586,6 +592,7 @@ nav {
         }
     }
 }
+
 
 .prototype{
    img {
@@ -606,11 +613,18 @@ nav{
     }
 }
 
+
+@media all and (min-width: 320px) and (max-width: 759px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
 .header-logo {
     img {
         height: 35px;
     }
 }
+
   .orders {
   transform: none;
   margin-top: 10rem;
@@ -622,6 +636,23 @@ form{
 }
   .cart{
      transform: none;
+
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-bar ul {
+    display: none;
+  }
+  .header-logo img {
+    height: 40px;
+  }
+  .search {
+    margin: 1rem 1rem 0 1rem;
+    width: 100%;
+  }
+
      margin-top: 3rem;
   }
 
@@ -632,6 +663,7 @@ form{
     height: 12px;
 }
  
+
   .hero {
     flex-direction: column-reverse;
     margin: 2rem 1rem;
@@ -666,8 +698,6 @@ form{
     font-size: 1rem;
     margin-left: 30%;
   }
-
-
   .prototype{
      flex-direction: column ;
     align-items: center ;
@@ -675,7 +705,6 @@ form{
     width: 100% ;
     gap: 1rem ;
   }
-
   .container{
     flex-direction: column ;
     align-items: center ;
@@ -711,9 +740,6 @@ form{
     margin: 1rem 0 0 0;
     transform: none ;
    }
-
- 
-
   .download {
     margin-top: 40%;
     flex-direction: column;
@@ -732,9 +758,11 @@ form{
     font-size: 1rem ;
     display: block ;
   }
+
 .social-media h2{
     font-size: 12px;
 }
+
 
   #why-choose{
     padding: 1rem ;
@@ -742,7 +770,6 @@ form{
     gap: 1rem ;
     align-items: center ;
   }
-
   .choose-options{
        padding: 1rem ;
     flex-direction: column;
@@ -779,12 +806,19 @@ form{
   .option-text {
     width: 100% ;
   }
+
+  .category-items img {
+    width: 60vw ;
+    height: auto ;
+    min-width: 120px;
+    max-width: 200px;
+    margin: 1rem auto;
+  }
+
   .how-it-works {
     padding: 2rem 0.5rem ;
     flex-direction: column;
   }
-
- 
   .community {
     height: auto ;
     min-height: 350px;
@@ -799,6 +833,7 @@ form{
     padding: 1rem ;
     font-size: 1rem ;
   }
+
 
   .users-story i{
     font-size: 70px;
@@ -855,6 +890,7 @@ form{
     }
   }
 
+
   .help{
     i{
         font-size: 60px;
@@ -887,8 +923,6 @@ form{
     font-size: 0.98rem ;
     padding: 4px ;
   }
-
-
   .footer {
     flex-direction: column ;
     align-items: center;
@@ -925,4 +959,140 @@ form{
     font-size: 0.97rem ;
     text-align: center ;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1280px)  {
+   body{
+    overflow-x: hidden;
+    
+   }
+    .hero img {
+    width: 100%;
+    margin-left: 15%;
+    
+  }
+    .hero-title p {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  
+  }
+   .hero-title h1 {
+    font-size: 4rem;
+    width: 100%;
+    
+  
+  }
+ 
+.hero{
+     margin-left: 4%;
+     gap: 60px;
+}
+.hero-btn {
+ 
+    width: 30%;
+    padding: 0.7rem 0;
+    margin: 2rem 0 0 0;
+    font-size: 1rem;
+  }
+    
+  .download{
+ 
+        padding: 7rem 5rem 1.5rem 10rem;
+  }
+  .google-play p{
+    font-size: 20px;
+  
+  }
+  .google-play{
+      margin-top: 5%;
+  }
+
+  .prototype{
+    margin-top: -16%;
+    margin-left: -9%;
+  }
+  .nav-bar ul{
+    gap:30px;
+     a{
+        font-size: 18px;
+     }
+  }
+  .how-it-works {
+     
+    margin-left: -15%;
+
+   
+}
+.google-play p{
+    margin-left: -40%;
+  
+}
+.step{
+    font-size: 15px;
+}
+.steps-prototype{
+ 
+       border-radius:50% / 100% 100% 0% 0% ;
+       width: 50%;
+      padding-left: -4%;
+       img{
+      
+       height:285px;
+        width:135px;
+       }
+}
+.container{
+       margin-left: -4%;
+}
+.categories-section{
+    margin-left: -9%;
+}
+.community h1{
+    font-size: 60px;
+    width: 100%;
+    margin-left: 15%;
+}
+.users-story p{
+    width: 135%;
+ padding-left: 28%;
+
+}
+.fa-users{
+    margin-left: -9%;
+
+}
+#contact-us{
+    margin-left: 2%;
+    width: 95%
+}
+.help-section{
+    margin-top: 4%;
+}
+.faq-item{
+    width:130%;
+    margin-left: -20%;
+}
+.footer{
+    margin-left: -12%;
+  
+     
+}
+.community {
+   width: 99%;
+}
+
 }
