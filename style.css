@@ -30,7 +30,7 @@ body {
 
 nav {
     display: flex;
-    gap:25%;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -460,7 +460,7 @@ nav {
     justify-content: space-between;
     padding: 10px 0;
     margin: 1rem 0;
-    background: #f8f8f8;
+    background: #F8F8F8;
     border-radius: 8px;
 }
 .faq-question {
@@ -481,37 +481,22 @@ nav {
 }
 .faq-answer {
     border-bottom: 1px solid #ccc;
-    width: 28.9%;
-    margin-left: 35.5%;
     display: none;
     padding: 10px 1.5rem;
     font-size: 1rem;
     color: #444;
-    
 }
 .faq-item.open .faq-answer {
     display: block;
     animation: fadeIn 0.3s;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
-        padding: 10px 0;
-        justify-self: center;
-        text-align: center;
     }
-}
-
-#faq-container {
-    margin: 5rem auto;
-}
-#faq-container h1 {
-    margin-bottom: 2rem;
-    justify-self: center;
 }
 
 .footer-container {
@@ -550,45 +535,80 @@ nav {
 
 /* ----------- MEDIA QUERIES ----------- */
 
-@media all and (min-width: 320px) and (max-width: 780px) {
-  html, body {
-    overflow-x: hidden;
-  }
-.safi-greens-home{
-    margin-top: 1rem;
-}
-.steps-prototype{
-    background: none;
-    div{
-        img{
-            display: block;
-            justify-self: center;
-        }
+
+/* 320px - 780px */
+@media only screen and (min-width: 320px) and (max-width: 780px) {
+    html, body {
+        overflow-x: hidden;
     }
-}
-
-.prototype{
-   img {
-        height: 500px;
-        width: 250px;
+    .safi-greens-home {
+        margin-top: 1rem;
     }
-}
-
-nav{
-    justify-content: space-evenly;
-}
-
-.nav-bar ul{
-    gap:15px;
-    margin-top: 0.5rem;
-    a{
-       font-size: small;  
+    .steps-prototype {
+        background: none;
     }
-}
+    .steps-prototype div img {
+        display: block;
+        justify-self: center;
+    }
+ 
+    .nav-bar ul {
+        gap: 15px;
+        margin-top: 0.5rem;
+    }
 
-.header-logo {
-    img {
+    .nav-bar ul a {
+        font-size: small;
+    }
+
+    body {
+        color: #003A2A;
+        font-family: nunito;
+        overflow-x: hidden;
+    }
+
+    .l-green {
+        color: #289323;
+    }
+
+    .header-logo img {
         height: 35px;
+    }
+  
+    .header-logo img {
+        height: 60px;
+        margin-top: 1rem;
+    }
+    #home {
+        color: #289323;
+    }
+    .nav-bar ul li {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .shop-now-btn {
+        background-color: #003A2A;
+        color: white;
+        width: 10rem;
+    }
+    .categories-btn {
+        border: #003A2A solid 2px;
+        width: 10rem;
+    }
+    .download {
+        background-color: hsl(163, 100%, 11%);
+        padding: 0.5rem 5rem 1.5rem 10rem;
+        margin-top: 9rem;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+    .google-play {
+        align-self: center;
+    }
+    .google-play img {
+        height: 30px;
     }
     .google-play p {
         font-size: 15px;
@@ -869,67 +889,250 @@ nav{
     .help h2 {
         font-size: 20px;
     }
-  }
+    #faq-container {
+        max-width: 98vw;
+        margin: 1rem auto;
+        padding: 0.5rem;
+    }
+    #faq-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .faq-item {
+        padding: 6px 0;
+    }
+    .faq-question,
+    .faq-answer {
+        font-size: 1rem;
+    }
+    .faq-answer{
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+    }
+    .faq-question i {
+        font-size: 0.98rem;
+        padding: 4px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0 0.5rem 0;
+        gap: 0.7rem;
+        text-align: center;
+    }
+    .footer > div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .social img {
+        margin: 0 auto 0.5rem auto;
+    }
+    .social div {
+        width: 50%;
+        margin: auto;
+    }
+    .social div i {
+        font-size: 1.5rem;
+    }
+    .footer ul {
+        padding: 0;
+    }
+    .footer ul li {
+        margin-bottom: 0.5rem;
+    }
+    .footer ul a {
+        font-size: 1rem;
+    }
+    .copy-right {
+        margin: 1rem 0 0 0;
+        padding: 1rem 0.5rem;
+        font-size: 0.97rem;
+        text-align: center;
+    }
+}
 
-  #faq-container {
-    max-width: 98vw ;
-    margin: 1rem auto ;
-    padding: 0.5rem;
-  }
-  #faq-container h1 {
-    font-size: 1.5rem ;
-    margin-bottom: 1rem ;
-  }
-  .faq-item {
-    margin: 0.5rem 0 ;
-    padding: 6px 0 ;
-  }
-  .faq-question,
-  .faq-answer {
-    font-size: 1rem ;
-    padding-left: 0.5rem ;
-    padding-right: 0.5rem ;
-  }
-  .faq-question i {
-    font-size: 0.98rem ;
-    padding: 4px ;
-  }
+
+@media only screen and (min-width:781px) and (max-width: 1024px) {
+    .hero{
+        justify-content: space-between;
+    }
+    .hero h1{
+        font-size: 60px;
+    }
+    .hero-title p{
+        padding: 0;
+        margin-left: 0;
+    }
+    .hero img{
+        margin:2rem 0;
+    }
+   
+    .download {
+        margin-top: 40%;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        color: #289323;
+        padding: 1rem;
+        margin: 1rem 0 0 0;
+    }
+    .google-play {
+        margin: 1rem 0 0 0;
+        align-items: center;
+        text-align: center;
+    }
+    .google-play p {
+        font-size: 1rem;
+        display: block;
+    }
+    .prototype{
+        margin-top: 5rem;
+    }
+    .social-media h2 {
+        font-size: 12px;
+    }
+    .how-it-works{
+        padding:5px;
+        justify-items: center;
+    }
+    .first-page,
+    .second-page,
+    .third-page{
+        transform: none;
+        margin-top: 3rem;
+    }
+    .steps-prototype{
+        gap:10px;
+    }
+
+    .community h1{
+        padding: 0;
+        margin: 0;
+    }
+
+    .users-story p{
+        padding: 1rem;
+        text-align: justify;
+    }
+    #contact-us{
+        flex-direction: column;
+    }
+      .faq-answer{
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+    }
+  
+}
 
 
-  .footer {
-    flex-direction: column ;
-    align-items: center;
-    padding: 1.5rem 0 0.5rem 0 ;
-    gap: 0.7rem ;
-    text-align: center ;
-  }
-  .footer > div {
-    width: 100% ;
-    margin-bottom: 1rem ;
-  }
-  .social img {
-    margin: 0 auto 0.5rem auto ;
-  }
-  .social div {
-    width: 50%;
-    margin: auto;
-  }
-  .social div i {
-    font-size: 1.5rem ;
-  }
-  .footer ul {
-    padding: 0 ;
-  }
-  .footer ul li {
-    margin-bottom: 0.5rem ;
-  }
-  .footer ul a {
-    font-size: 1rem ;
-  }
-  .copy-right {
-    margin: 1rem 0 0 0 ;
-    padding: 1rem 0.5rem ;
-    font-size: 0.97rem ;
-    text-align: center ;
-  }
+
+@media only screen  and (min-width:1025px) and (max-width: 1280px) {
+    *{
+        margin:0;
+        box-sizing: border-box;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    body {
+        width:100vw;
+        overflow-x: hidden;
+    }
+    .hero img {
+        width: 100%;
+        margin-left: 15%;
+    }
+    .hero-title p {
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-title h1 {
+        font-size: 4rem;
+        width: 100%;
+    }
+    .hero {
+        margin-left: 4%;
+        gap: 60px;
+    }
+    .hero-btn {
+        width: 30%;
+        padding: 0.7rem 0;
+        margin: 2rem 0 0 0;
+        font-size: 1rem;
+    }
+    .download {
+        padding: 5rem 2rem 1.5rem 5rem;
+    }
+    .google-play p {
+        font-size: 20px;
+    }
+    .google-play {
+        margin-top: 5%;
+    }
+  
+    .nav-bar ul {
+        gap: 30px;
+    }
+    .nav-bar ul a {
+        font-size: 18px;
+    }
+    .how-it-works{
+        padding: 3rem;
+    }
+   .google-play img {
+    height: 20px;
+}
+    .step {
+        font-size: 15px;
+    }
+    .steps-prototype {
+        border-radius: 50% / 100% 100% 0% 0%;
+        width: 50%;
+        padding-left: -4%;
+    }
+    .steps-prototype img {
+        height: 285px;
+        width: 135px;
+    }
+    .container {
+        margin-left: -4%;
+    }
+    .categories-section {
+        margin-left: -9%;
+    }
+    .community h1 {
+        font-size: 60px;
+        width: 100%;
+        margin-left: 15%;
+    }
+    .users-story p {
+        width: 135%;
+        padding-left: 28%;
+    }
+    .fa-users {
+        margin-left: -9%;
+    }
+    #contact-us {
+        margin-left: 2%;
+        width: 95%;
+    }
+    .help-section {
+        margin-top: 4%;
+    }
+    .faq-item {
+        width: 130%;
+        margin-left: -20%;
+    }
+    .community {
+        width: 99%;
+    }
+     .faq-answer{
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+    }
 }
